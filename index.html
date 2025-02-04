@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+	<title>Quiz 1: JAVASCRIPT OPERATORS</title>
+</head>
+<body>
+	<div class="container"> 
+		<h3>Javascript Operators</h3>
+		<hr>
+		<div class="alert alert-warning">
+		<p>GIVEN: If A=30.27 and B=6.18, compute for the following:</p>
+		</div>
+
+		<div class="row justify-content-center mt-5">
+			<div class="col-md-3 mb-4">
+				<p>Arithmetic Operators</p>
+				<p id="Exponent">Exponent:</p>
+				    
+				<p id="Modulo">Modulo:</p>
+				<button type="button" onclick="
+					var A = 30.27;  
+					var B = 6.18;
+					var result= A ** B;
+					var round_result= result.toFixed (2)
+					var result2= A % B;
+					var round_result2= result2.toFixed (2)
+					
+					document.getElementById('Exponent').innerHTML = 'Exponent: ' + round_result;
+				
+					document.getElementById('Modulo').innerHTML = 'Modulo: ' + round_result2">Show Answer
+				</button>
+			</div>
+
+			<div class="col-md-3 mb-4">
+			<p>Comparison Operators</p>
+			<p id="Greater">Is 30.27 greater than 6.18?</p>
+			<p id="Equal">Is 30.27 equal 6.18?</p>
+			<button type="button" onclick="
+			    var A = 30.27;
+        		var B = 6.18;
+
+        		document.getElementById('Greater').innerHTML = 'Is 30.27 greater than 6.18? ' + (A > B);
+       			document.getElementById('Equal').innerHTML = 'Is 30.27 equal 6.18? ' + (A === B);">
+       			Show Answer
+			</button>
+			</div>
+
+			<div class="col-md-3 mb-4">
+			<p>Logical Operators</p>
+			<p id="true">(30.27 <= 6.18) && (30.27 >= 6.18)</p>
+			<p id="false">(30.27 != 6.18) || (30.27 == 6.18)</p>
+			 <button type="button" onclick="
+		        var a = 30.27;
+		        var b = 6.18;
+		        document.getElementById('true').innerHTML = '(30.27 <= 6.18) && (30.27 >= 6.18)' + (a <= b) && (a >= b);
+		        document.getElementById('false').innerHTML = '(30.27 != 6.18) || (30.27 == 6.18)' + (a != b) || (a == b);">Show Answers
+			</button>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+        <p><a href="https://github.com/KEspina-9T?tab=repositories" target="_blank">Khloe Myles S. Espina | 9-Topaz</p>
+    </footer>
+</body>
+</html>

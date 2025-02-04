@@ -1,0 +1,33 @@
+body {
+    background-image:url();
+    color: #333;
+    font-family: Crimson Text;
+}
+
+.container {
+
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 20px;
+    background-color: #ddbea9;
+
+}
+h3{
+    text-align: center;
+}
+.footer {
+    background-color: #cb997e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	color:#0d1b2a ;
+}
